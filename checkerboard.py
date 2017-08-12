@@ -3,10 +3,7 @@ import sys
 def main():
     for i in range(0, 8):
         for j in range(0, 8):
-            if is_even(i + j):
-                sys.stdout.write('*')
-            else:
-                sys.stdout.write(' ')
+            sys.stdout.write('*' if is_even(i + j) else ' ')
 
         sys.stdout.write('\n')
 
